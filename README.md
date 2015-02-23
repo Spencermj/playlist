@@ -8,7 +8,7 @@ Using [Playlist API], you can create an ordered list of tracks when given certai
 
 **Dependencies**
 
-To use playlist.py, you will need Pyechonest.
+You will need Pyechonest to use playlist.py.
 
 **How To Create A Playlist**
 
