@@ -20,7 +20,9 @@ You will need Pyechonest to use playlist.py.
 
 **Resources**
 1. [Playlist API]
+
 2. [The Echonest Playlisting Overview]
+
 3. [The Echonest Standard Playlisting]
 
 **How To Create A Playlist**
