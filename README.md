@@ -4,7 +4,7 @@ Create a static playlist using Pyechonest
 
 **What It Does**
 
-Using [Playlist API], you can create an ordered list of tracks when given certain paramaters. [The Echonest Playlist Overview] goes in depth on what you can do with each of the methods in the API and how the playlist changes with each paramater. The Echonest also has guides on how to perform basic, standard, and premium playlisting. Using the playlist API, you can make a very basic playlist with a small amount of code or you can make a very advanced playlist.
+Using [Playlist API], you can create an ordered list of tracks when given certain paramaters. [The Echonest Playlisting Overview] goes in depth on what you can do with each of the methods in the API and how the playlist changes with each paramater. The Echonest also has guides on how to perform basic, standard, and premium playlisting. Using the playlist API, you can make a very basic playlist with a small amount of code or you can make a very advanced playlist.
 
 **What Problem Does It Solve?**
 
@@ -12,7 +12,7 @@ The playlist module allows you to create a playlist based off either a Taste Pro
 
 **How Did I Come Up With This Idea?**
 
-While thinking about what was required for a more complex program, I realized that I was in need of some way of creating a playlist. The idea of the original program was to make a playlist of songs that would sound well together and combine them into one .mp3. I originally thought that I would need to write my own code to pick which songs would go into the .mp3, but I quickly found that [The Echonest] has a playlist module as well as multiples guides on how to use it.
+While thinking about what was required for a more complex program, I realized that I was in need of some way of creating a playlist. The idea of the original program was to make a playlist of songs that would sound well together and combine them into one .mp3. I originally thought that I would need to write my own code to pick which songs would go into the .mp3, but I quickly found that The Echonest has a playlist module as well as multiples guides on how to use it.
 
 **Dependencies**
 
