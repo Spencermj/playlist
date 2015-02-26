@@ -19,6 +19,7 @@ While thinking about what was required for a more complex program, I realized th
 You will need Pyechonest to use playlist.py.
 
 **Resources**
+
 1. [Playlist API]
 
 2. [The Echonest Playlisting Overview]
