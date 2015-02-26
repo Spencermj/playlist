@@ -26,6 +26,8 @@ You will need Pyechonest to use playlist.py.
 
 3. [The Echonest Standard Playlisting]
 
+4. [Taste Profile]
+
 **How To Create A Playlist**
 
 There are many different paramaters that will affect the outcome of the playlist. To make a basic playlist, the only paramaters necessary are anywhere from one to five artists, genres, or songs and a playlist type. The following is a list of playlist types:
