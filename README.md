@@ -81,9 +81,9 @@ For the user to create a playlist from the linux command script, they must enter
         Artist-Radio: python playlist.py "artist-radio" "led zeppelin" "def leppard" "genesis"
         
         Song-Radio: python playlist.py "song-radio" "SOCZMFK12AC468668F"
-
-        Genre-Radio: python playlist.py "genre-radio" "classic rock" "jazz" "
-
+        
+        Genre-Radio: python playlist.py "genre-radio" "classic rock" "jazz" "classical" "heavy metal"
+        
         Artist: python playlist.py "anything" "tom petty"
 
 [Playlist API]: http://echonest.github.io/remix/apidocs/pyechonest.playlist.Playlist-class.html
