@@ -8,7 +8,7 @@ Using [Playlist API], you can create an ordered list of tracks when given certai
 
 **What Problem Does It Solve?**
 
-The playlist module allows you to create a playlist based off either a Taste Profile or preferred music. This is obviously the resource you would want to use if you were making an application involving a playlist, but it can serve more than just that purpose. The playlist module finds songs that it considers similar to each other based off of a certain criteria, this is a very useful resource when you need to find songs that are related to each other in some way. To find similar songs all you need to do is make a playlist object using the songs you want and the criteria you want to use to find related songs.
+The playlist module allows you to create a playlist based off either a Taste Profile or preferred music. This is obviously the resource you would want to use if you were making an application involving a playlist, but it can serve more than just that purpose. The playlist module finds songs that it considers similar to each other based off of a certain criteria, this is a very useful resource when you need to find songs that are related to each other in some way. With the playlist module, you can enter several songs, artists, or genres and an attribute such as mode, key, tempo, energy, or song_hotttnesss and get a list of songs that are considered similar based off of the attribute. This is useful when you are trying to find songs that have similar attributes because it is an easy way to produce a list of similar songs and there are a wide number of attributes you can use as paramaters for finding related songs.
 
 **How Did I Come Up With This Idea?**
 
