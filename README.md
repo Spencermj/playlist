@@ -59,13 +59,32 @@ p = Playlist(type='artist-radio', artist=['led zeppelin', 'rolling stones'])
 
 **Code Explanation**
 
-The program I created with the playlist is fairly straightforward, it creates an artist-radio type playlist based off of Led Zeppelin and The Rolling Stones and it prints off the name of every song in the playlist. I first initialize a new playlist object using the paramaters previously mentioned, then I use a for-each loop to print the title of each song in the playlist to the console.
+The program I created with the playlist is fairly straightforward, it takes a few paramaters from the command line, makes a playlist of up to 15 songs, and prints each song to the console. The first paramater that must be entered is the playlist type, entering "artist-radio", "song-radio", or "genre-radio" will create a playlist of that type using the next 1 to 5 songs, genres, or artists typed into the command line. If anything is entered as the first paramater other than the three strings listed above, the program will create a playlist of only songs belonging to the artist that is entered as the next paramater. 
+
+I first check to see what type of playlist the user wants to make, then I initialize a playlist object using the appropriate playlist type and the list of songs, artists, or genres that the user entered. After the playlist has been created, I simply use a for-each loop to print the title of each song in the playlist to the console. After receiving a paramater for the playlist type (radio_type), and a list of songs, artists, or genres (paramaterList), the following code creates a playlist of up to 15 songs based off of the users input:
 ```python
 collect = []
-    p = playlist.static(type='artist-radio', artist=['led zeppelin', 'rolling stones'])
+    if radio_type == "artist-radio":
+        p = playlist.static(type=radio_type, artist=paramaterList)
+    elif radio_type == "song-radio":
+        p = playlist.static(type=radio_type, song=paramaterList)
+    elif radio_type == "genre-radio":
+        p = playlist.static(type=radio_type, genre=paramaterList)
+    p = playlist.static(type="artist", artist=paramaterList)
     for song in p:
         print song.title
+
 ```
+
+For the user to create a playlist from the linux command script, they must enter the playlist type followed by a list of 1 to 5 artists, genres, or songs. Although the user can enter Strings for the names of certain artists and genres, song ID's must be used to base a playlist off of specific songs. The following commands are a few examples of how to create a playlist based off of songs, artists, and genres:
+
+        Artist-Radio: python playlist.py "artist-radio" "led zeppelin" "def leppard" "genesis"
+        
+        Song-Radio: python playlist.py "song-radio" "SOCZMFK12AC468668F"
+
+        Genre-Radio: python playlist.py "genre-radio" "classic rock" "jazz" "
+
+        Artist: python playlist.py "anything" "tom petty"
 
 [Playlist API]: http://echonest.github.io/remix/apidocs/pyechonest.playlist.Playlist-class.html
 [The Echonest Playlisting Overview]: http://developer.echonest.com/docs/v4/playlisting.html
