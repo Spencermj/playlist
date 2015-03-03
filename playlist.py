@@ -6,11 +6,11 @@ import os
 def main(radio_type, paramaterList):
     collect = []
     if radio_type == "artist-radio":
-        p = playlist.static(type=radio_type, artist=paramaterList)
+        p = playlist.static(type=radio_type, artist = paramaterList)
     elif radio_type == "song-radio":
-        p = playlist.static(type=radio_type, song=paramaterList)
+        p = playlist.static(type=radio_type, song_id = paramaterList)
     elif radio_type == "genre-radio":
-        p = playlist.static(type=radio_type, genre=paramaterList)
+        p = playlist.static(type=radio_type, genres = paramaterList)
     p = playlist.static(type="artist", artist=paramaterList)
     for song in p:
         print song.title
