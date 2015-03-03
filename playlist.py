@@ -11,7 +11,8 @@ def main(radio_type, paramaterList):
         p = playlist.static(type=radio_type, song_id = paramaterList)
     elif radio_type == "genre-radio":
         p = playlist.static(type=radio_type, genres = paramaterList)
-    p = playlist.static(type="artist", artist=paramaterList)
+    else:
+        p = playlist.static(type="artist", artist=paramaterList)
     for song in p:
         print song.title
 
